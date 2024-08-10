@@ -10,6 +10,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 html {
@@ -156,7 +159,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: fit-content;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -173,6 +176,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-top: -2rem;
 }
 
 .section_pic-container {
@@ -277,11 +281,12 @@ section {
 #about {
   position: relative;
   margin-right: 10vh;
+  /* margin-top: 4%; */
 }
 
 .education-container {
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   width: fit-content;
   max-width: 700px;
@@ -291,10 +296,8 @@ section {
 .about-details-container {
   justify-content: center;
   width: fit-content;
-  /* vertical-align:middle; */
   flex-direction: column;
   display: flex;
-  /* margin-top: 7%; */
 }
 
 .education-containers,
@@ -304,8 +307,6 @@ section {
 
 .education-details-container {
   padding: 0.5rem;
-  /* gap: 5rem; */
-  /* flex: 1; */
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -318,24 +319,15 @@ section {
 }
 
 .section-container {
-  gap: 7.5rem;
+  gap: 5rem;
   height: 80%;
 }
 
-/* .section-container {
-  display: flex;
-  align-items: center;
-} */
-
 .section__pic-container {
-  /* height: 400px;
-    width: 400px; */
   margin: auto 0;
 }
 
 .education-info-container {
-  /* height: 20%; */
-  /* width: 20%; */
   gap: 1rem;
   display: flex;
   flex-direction: row;
@@ -349,14 +341,13 @@ section {
   margin-bottom: 1rem;
 }
 
-.education-text{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    /* align-self: flex-end; */
-    align-content: center;
-    margin-bottom: 3%;
-    line-height: 150%;
+.education-text {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-content: center;
+  margin-bottom: 3%;
+  line-height: 150%;
 }
 
 .education-title {
@@ -364,22 +355,45 @@ section {
 }
 
 .about-pic {
-    border-radius: 2rem;
-    height: 446px;
-    width: 400px;
-  }
-  
-  .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-  }
+  border-radius: 2rem;
+  height: 446px;
+  width: 400px;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
 
 .about-text_container {
-  /* height: 30%; */
-  /* width: 70%; */
-  /* margin-top: 1rem; */
-  /* display: flex; */
-  /* justify-content: flex-start; */
   max-width: 900px;
+}
+
+/* Experience */
+
+#experience {
+  position: relative;
+  margin-right: 10vh;
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 7%;
+}
+
+.experience-box {
+  display: flex;
+  gap: 5rem;
+}
+
+.experience-text {
+  line-height: 23px;
+}
+
+.experience-img {
+  height: 10%;
+  width: 13%;
 }

@@ -1,105 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdullah Motasim</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-<body>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Abdullah Motasim</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Abdullah Motasim</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Abdullah Motasim</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          </div>
+      <div class="logo">Abdullah Motasim</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
     <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assests/glasses-pic_Nero AI_Face.jpeg" alt="Abdullah Motasim Profile Picutre"> 
+      <div class="section_pic-container">
+        <img
+          src="./assests/glasses-pic_Nero AI_Face.jpeg"
+          alt="Abdullah Motasim Profile Picutre"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abdullah Motasim</h1>
+        <p class="section__text__p2">Computer Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assests/Motasim_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Abdullah Motasim</h1>
-            <p class="section__text__p2">Computer Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2"
-                onclick="window.open('./assests/Motasim_Resume.pdf')">
-                Download CV</button>
-                <button class="btn btn-color-1"
-                onclick="location.href='./#contact'">
-                Contact Info</button>
-            </div>
-            <div class="socials-container">
-                <img src="./assests/linkedin.png" alt="My Linkdin Profile" class="icon" onclick="openInNewTab('https://www.linkedin.com/in/abdullah-motasim/')">
-                <img src="./assests/github.png" alt="My Github Profile" class="icon" onclick="openInNewTab('https://github.com/abdullah-motasim')">
-            </div>
+        <div class="socials-container">
+          <img
+            src="./assests/linkedin.png"
+            alt="My Linkdin Profile"
+            class="icon"
+            onclick="openInNewTab('https://www.linkedin.com/in/abdullah-motasim/')"
+          />
+          <img
+            src="./assests/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="openInNewTab('https://github.com/abdullah-motasim')"
+          />
         </div>
+      </div>
     </section>
-    <!-- <hr width="98%" size="1"> -->
 
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assests/hikaru_pic_enhanced.jpg" alt="Profile picture" class="about-pic"/>
-            </div>
-            <div class="about-details-container">
-                <div class="education-container">
-                    <div class="education-details-container">
-                        <div class="education-title">
-                            <h2>Education</h2>
-                        </div>
-                        <div class="education-info-container">
-                            <img src="/assests/uoft_logo_cropped.jpg" alt="UofT logo" class="uoft-icon"/>
-                            <div class="education-text">
-                                <!-- <h3>University of Toronto</h3> -->
-                                <p>Computer/Electrical Engineering + PEY</p>
-                                <!-- <p>Bachelor of Engineering <span>•</span> September 2022 - May 2027 (Expected)</p> -->
-                                <p>Minor in Artificial Intelligence, Statistics, and Engineering Business</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-text_container">
-                    <p>
-                        I am Abdullah Motasim a 3rd year computer engineering student attending the University of Toronto. I'm eager to explore entry-level opportunities within the tech industry. My passion lies in the fusion of software and hardware, and I thrive in collaborative team environments. I'm open to expanding my skill set, with a particular focus on enhancing my proficiency in both hardware and software aspects.<br><br>Throughout my academic career, I've worked on several intriguing projects, such as an image colorizer in which I trained a neural network to add color to greyscale images and a geographic mapping system similar to Google Maps, using an API and plotting library in C++ to display major cities. These projects have allowed me to gain experience with various programming languages, including Python, C/C++, R, and Verilog.
-                        <br><br>
-                        Outside of academics, I enjoy playing chess, photography, and basketball. Here's a picture of me with Hikaru Nakamura, one of my chess inspirations.
-                    </p>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assests/hikaru_pic_enhanced.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        <div class="about-details-container">
+          <div class="education-container">
+            <div class="education-details-container">
+              <div class="education-title">
+                <h2>Education</h2>
+              </div>
+              <div class="education-info-container">
+                <img
+                  src="/assests/uoft_logo_cropped.jpg"
+                  alt="UofT logo"
+                  class="uoft-icon"
+                />
+                <div class="education-text">
+                  <!-- <h3>University of Toronto</h3> -->
+                  <p>Computer/Electrical Engineering + PEY</p>
+                  <!-- <p>Bachelor of Engineering <span>•</span> September 2022 - May 2027 (Expected)</p> -->
+                  <p>
+                    Minor in Artificial Intelligence, Statistics, and
+                    Engineering Business
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-text_container">
+            <p>
+              I am Abdullah Motasim a 3rd year computer engineering student
+              attending the University of Toronto. I'm eager to explore
+              entry-level opportunities within the tech industry. My passion
+              lies in the fusion of software and hardware, and I thrive in
+              collaborative team environments. I'm open to expanding my skill
+              set, with a particular focus on enhancing my proficiency in both
+              hardware and software aspects.<br /><br />Throughout my academic
+              career, I've worked on several intriguing projects, such as an
+              image colorizer in which I trained a neural network to add color
+              to greyscale images and a geographic mapping system similar to
+              Google Maps, using an API and plotting library in C++ to display
+              major cities. These projects have allowed me to gain experience
+              with various programming languages, including Python, C/C++, R,
+              and Verilog. <br /><br />
+              Outside of academics, I enjoy playing chess, photography, and
+              basketball. Here's a picture of me with Hikaru Nakamura, one of my
+              chess inspirations.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-    <br>
-    <!-- <hr width="98%" size="1"> -->
 
-    <script src="script.js"></script>    
-</body>
+    <section id="experience">
+      <p class="section__text__p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-box">
+          <img
+            src="./assests/uoft_logo.jpg"
+            alt="UofT logo"
+            class="experience-img"
+          />
+          <div class="experience-text">
+            <h3>University of Toronto</h3>
+            <h4>May 2023 – August 2023 • Toronto, ON</h4>
+            <h5>Faculty of Medicine - Student Interviewer</h5>
+            <p>
+              • Collaborated with the Human Biology faculty to enhance and
+              enrich the student learning experience.<br />
+              • Performed 12 interviews with graduate students to gather
+              feedback on departmental experiences, evaluating these interviews
+              to identify opportunities for improvement, and presenting these
+              findings to professors in a professional setting.<br />
+              • Developed strong skills in oral/written communication,
+              qualitative analysis, and public speaking.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <img
+            src="./assests/chestnut-logo-small.jpeg"
+            alt="Chestnut logo"
+            class="experience-img"
+          />
+          <div class="experience-text">
+            <h3>Chestnut Residence Faculty</h3>
+            <h4>January 2023 – April 2023 • Toronto, ON</h4>
+            <h5>Engineering Team Leader</h5>
+            <p>
+              • Collaborated with a team of 5 engineering students to redesign a
+              social study space within a student residence.<br />
+              • Worked as team leader to ensure client needs and deadlines were
+              satisfied. Designed a robust solution that utilized 20% of
+              previously unclaimed space while cutting the original budget by
+              $24 000.<br />
+              • Developed skills in team management techniques, client
+              relations, and leadership.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <img
+            src="./assests/mcmaster-logo.png"
+            alt="McMaster logo"
+            class="experience-img"
+          />
+          <div class="experience-text">
+            <h3>McMaster University</h3>
+            <h4>November 2020 – February 2021 • Hamilton, ON</h4>
+            <h5>Research Assistant</h5>
+            <p>
+              • Collaborated with the Human Biology faculty to enhance and
+              enrich the student learning experience.<br />
+              • Performed 12 interviews with graduate students to gather
+              feedback on departmental experiences, evaluating these interviews
+              to identify opportunities for improvement, and presenting these
+              findings to professors in a professional setting.<br />
+              • Developed strong skills in oral/written communication,
+              qualitative analysis, and public speaking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
