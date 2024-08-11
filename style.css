@@ -281,7 +281,6 @@ section {
 #about {
   position: relative;
   margin-right: 10vh;
-  /* margin-top: 4%; */
 }
 
 .education-container {
@@ -321,6 +320,7 @@ section {
 .section-container {
   gap: 5rem;
   height: 80%;
+  margin-bottom: 5rem;
 }
 
 .section__pic-container {
@@ -370,7 +370,7 @@ section {
   max-width: 900px;
 }
 
-/* Experience */
+/* Experience Section*/
 
 #experience {
   position: relative;
@@ -396,4 +396,86 @@ section {
 .experience-img {
   height: 10%;
   width: 13%;
+}
+
+.experience-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5.5rem;
+}
+
+.experience-btn {
+  position: absolute;
+  left: 37%;
+  font-size: large;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 16rem;
+  border-radius: 2rem;
+}
+
+/* Projects Section*/
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#projects{
+  position: relative;
+}
+
+.color-container{
+  border-color: rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+}
+
+.project-img{
+  margin: 3rem;
+}
+
+.project-title{
+  margin-top: 1rem;
+  color: black;
+}
+
+.project-btn{
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+.projects-section-container{
+  display: flex;
+  justify-content: center;
+}
+
+.projects-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 7%;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width: fit-content;
+}
+
+.GIS-video{
+  margin: 2rem;
+}
+
+.GIS-video:hover{
+  cursor: pointer;
 }
