@@ -61,18 +61,22 @@
           </button>
         </div>
         <div class="socials-container">
+          <!-- <div class="linkdin-icon"> -->
           <img
             src="./assests/linkedin.png"
             alt="My Linkdin Profile"
             class="icon"
             onclick="openInNewTab('https://www.linkedin.com/in/abdullah-motasim/')"
           />
+          <!-- </div> -->
+          <!-- <div class="github-icon"> -->
           <img
             src="./assests/github.png"
             alt="My Github Profile"
             class="icon"
             onclick="openInNewTab('https://github.com/abdullah-motasim')"
           />
+          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -149,8 +153,8 @@
           />
           <div class="experience-text">
             <h3>University of Toronto</h3>
-            <h4>Faculty of Medicine - Student Interviewer</h5>
-            <h5>May 2023 – August 2023 • Toronto, ON</h4>
+            <h4>Faculty of Medicine - Student Interviewer</h4>
+            <h5>May 2023 – August 2023 • Toronto, ON</h5>
             <p>
               • Collaborated with the Human Biology faculty to enhance and
               enrich the student learning experience.<br />
@@ -163,7 +167,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="experience-box">
           <img
             src="./assests/chestnut-logo-small.jpeg"
@@ -186,7 +190,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="experience-box">
           <img
             src="./assests/mcmaster-logo.png"
@@ -209,14 +213,25 @@
             </p>
           </div>
         </div>
-        <div class="experience-btn-container">
+        <!-- <div class="experience-btn-container">
           <button
             class="experience-btn btn-color-2"
             onclick="window.open('./assests/All-experiences.pdf')"
           >
             View All Experiences
-          </button>
-        </div>
+          </button> -->
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <section id="experience-btn">
+      <div class="experience-btn-container">
+        <button
+          class="experience-btn btn-color-2"
+          onclick="window.open('./assests/All-experiences.pdf')"
+        >
+          View All Experiences
+        </button>
       </div>
     </section>
 
@@ -226,46 +241,110 @@
       <div class="projects-section-container">
         <div class="projects-details-container">
           <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <video
-              class="GIS-video"
-              width="632px"
-              height="400px"
-              controls="controls"
-              poster="./assests/GIS-poster.PNG"
-            >
-              <source src="./assests/GIS-video.mp4" type="video/mp4" />
-              This browser does not support HTML video.
-            </video>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openInNewTab('https://github.com/abdullah-motasim/ECE297-GIS-Mapping-Software')"
+            <h2 class="experience-sub-title project-title">
+              Bolt-GIS Mapping Software
+            </h2>
+            <div class="project-pic-container1">
+              <video
+                class="GIS-video"
+                poster="./assests/GIS-poster-cropped.png"
+                controls="controls"
               >
-                Github
-              </button>
+                <source src="./assests/GIS-demo-cropped.mp4" type="video/mp4" />
+                This browser does not support HTML video.
+              </video>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openInNewTab('https://github.com/abdullah-motasim/ECE297-GIS-Mapping-Software')"
+                >
+                  Github
+                </button>
+              </div>
             </div>
           </div>
 
           <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <img
+            <h2 class="experience-sub-title project-title">
+              AI Image Colorizer
+            </h2>
+            <div class="project-pic-container2">
+              <!-- <img
               src="./assests/image-colorizer.png"
               alt="Image colorizer pic"
               class="project-img"
-            />
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openInNewTab('https://github.com/abdullah-motasim/AI-Image-Colorizer')"
+            /> -->
+              <!-- <iframe width="632" height="355" src="https://www.youtube.com/embed/h9520l85-2Y?si=CgV7-mrGph3_a-FR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+              <video
+                class="image-colorizer-video"
+                poster="./assests/colorizer-poster-cropped.png"
+                controls="controls"
               >
-                Github
-              </button>
+                <source
+                  src="./assests/colorizer-model-demo.mp4"
+                  type="video/mp4"
+                />
+                This browser does not support HTML video.
+              </video>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="openInNewTab('https://github.com/abdullah-motasim/AI-Image-Colorizer')"
+                >
+                  Github
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assests/email.png"
+            alt="Email icon"
+            class="contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:abdullah.motasim@mail.utoronto.ca"
+              >abdullah.motasim@mail.utoronto.ca</a
+            >
+          </p>
+          <img
+            src="./assests/linkedin.png"
+            alt="Linkdin icon"
+            class="contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/abdullah-motasim/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Abdullah Motasim. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
