@@ -1,8 +1,277 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
+@media screen and (max-width: 1400px) {
+  #profile {
+    /* height: 83vh; */
+    height: fit-content;
+    /* margin-bottom: 6rem; */
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  /* ABOUT */
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .section__pic-container {
+    /* width: 90vw; */
+    height: fit-content;
+    width: fit-content;
+    margin-top: 2rem;
+  }
+
+  .about-pic {
+    width: 505px;
+    height: 525px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1150px) {
+  /* NAVS */
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* PROFILE */
+  .section_pic-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+  #profile {
+    display: block;
+  }
+
+  /* ABOUT */
+  #about {
+    /* margin-top: 30vh; */
+  } 
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: fit-content;
+      height: fit-content; */
+    gap: 3rem;
+  }
+
+  .section__pic-container {
+    /* width: 90vw; */
+    height: fit-content;
+    width: fit-content;
+    margin-top: 2rem;
+  }
+
+  .about-pic {
+    width: 505px;
+    height: 525px;
+  }
+
+  /* EXPERIENCE */
+  section {
+    height: fit-content;
+    margin: 0 5%;
+  }
+
+  .experience-details-container {
+    margin-top: 4rem;
+  }
+
+  .experience-box {
+    gap: 4rem;
+  }
+
+  .experience-img {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* PROJECTS */
+  .details-container {
+    width: 675px;
+    height: fit-content;
+  }
+
+  .GIS-video {
+    width: 675px;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 700px){
+
+  /* PROJECTS */
+  .details-container {
+    width: 525px;
+    height: fit-content;
+  }
+
+  .GIS-video {
+    width: 525px;
+    height: 375px;
+    margin: 0;
+  }
+
+  /* CONTACT */
+  .contact-info-container{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* PROFILE */
+  .section_pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+
+  /* ABOUT */
+  #about {
+    margin-top: 0rem;
+  }
+
+  .section-container {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+
+  .section__pic-container {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 2rem;
+  }
+
+  .about-pic {
+    width: 275px;
+    height: 295px;
+  }
+
+  /* EXPIRIENCE */
+  #experience {
+    /* margin-right: 18.75px; */
+  }
+  .experience-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .experience-img {
+    height: 225px;
+    width: 225px;
+  }
+
+  /* EXPIRIENCE BTN */
+  .experience-btn-container{
+    margin-bottom: 0;
+  }
+
+  /* PROJECTS */
+  .details-container {
+    width: 400px;
+    height: fit-content;
+  }
+
+  .GIS-video {
+    width: 375px;
+    height: 285px;
+    margin: 0;
+  }
+
+  .project-title{
+    margin-bottom: 0.5rem;
+  }
+
+  /* CONTACT */
+  #contact {
+    height: 40vh;
+  }
+
+  .contact-info-container {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .email-icon {
+    margin: 0;
+    height: 3rem;
+  }
+
+  /* FOOTER */
+  footer {
+    /* height: 40vh; */
+    /* margin-bottom: 2vh; */
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 470px){
+    /* PROJECTS */
+    .details-container {
+      width: 275px;
+      height: fit-content;
     }
-    #hamburger-nav {
-        display: flex;
+  
+    .GIS-video {
+      width: 275px;
+      height: 225px;
+      margin: 0;
     }
 }

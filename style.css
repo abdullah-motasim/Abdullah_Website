@@ -285,7 +285,6 @@ section {
 
 #about {
   position: relative;
-  margin-right: 10vh;
 }
 
 .education-container {
@@ -379,7 +378,7 @@ section {
 
 #experience {
   position: relative;
-  margin-right: 10vh;
+  /* margin-right: 10vh; */
 }
 
 .experience-details-container {
@@ -482,6 +481,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* margin-top: 7%; */
   gap: 3rem;
 }
@@ -495,6 +495,7 @@ section {
 
 .GIS-video{
   margin: 2rem;
+  width: 690px;
 }
 
 .GIS-video:hover{
@@ -529,7 +530,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin: 1rem;
 }
 
@@ -537,11 +538,24 @@ section {
   font-size: x-large;
 }
 
+.email-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linkedin-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .contact-icon {
   cursor: default;
   height: 2.5rem;
   margin: 0;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .email-icon {
